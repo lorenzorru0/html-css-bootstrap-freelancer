@@ -1,8 +1,8 @@
 /* Debug */
 .square {
     display: inline-block;
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
     background-color: coral;
 }
 
@@ -13,15 +13,21 @@
 .row {
     height: 100%;
 }
+section {
+    padding: 40px 0px;
+}
 
 /* Typo */
-h1, h2 {
+h1, h3 {
     color: #fff;
 }
 h1 {
     font-size: 25px;
 }
 h2 {
+    font-size: 18px;
+}
+h3 {
     font-size: 13px;
 }
 
@@ -40,9 +46,14 @@ header ul {
     margin-bottom: 0;
 }
 
-/* Main */
+/* -Main- */
+/* Hero */
 .hero {
     background-color: #1abc9c;
     margin-top: 90px;
-    padding: 40px 0px;
+}
+
+/* Portfolio */
+.portfolio .square {
+    width: 100%;
 }
