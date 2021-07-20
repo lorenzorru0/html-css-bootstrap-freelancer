@@ -10,6 +10,9 @@
 .container {
     height: 100%;
 }
+.row {
+    height: 100%;
+}
 
 /* Typo */
 h1, h2 {
