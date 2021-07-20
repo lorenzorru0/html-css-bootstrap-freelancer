@@ -18,7 +18,7 @@ section {
 }
 
 /* Typo */
-h1, h3 {
+h1, h3, p {
     color: #fff;
 }
 h1 {
@@ -29,6 +29,9 @@ h2 {
 }
 h3 {
     font-size: 13px;
+}
+p {
+    font-size: 15px;
 }
 
 /* Header */
@@ -55,5 +58,18 @@ header ul {
 
 /* Portfolio */
 .portfolio .square {
+    width: 100%;
+}
+
+/* About */
+.about {
+    background-color: #1abc9c;
+}
+.about h2 {
+    color: #fff;
+}
+
+/* Contact me */
+.contact-me .square {
     width: 100%;
 }
