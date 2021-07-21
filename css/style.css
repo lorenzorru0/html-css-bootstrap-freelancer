@@ -19,12 +19,30 @@ section {
 .bg_secondary {
     background-color: #1abc9c;
 }
+.divider {
+    color: #fff;
+    padding: 30px 0px 25px 0px;
+}
+.bar {
+    display: inline-block;
+    width: 75px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #fff;
+    vertical-align: middle;
+}
+.divider i {
+    padding: 0px 10px;
+    font-size: 30px;
+    vertical-align: middle;
+}
 
 /* Typo */
 h1, h3, p {
     color: #fff;
 }
 h1 {
+    padding-top: 25px;
     font-size: 25px;
 }
 h2 {
@@ -43,6 +61,7 @@ header {
     top: 0;
     width: 100%;
     height: 90px;
+    line-height: 90px;
 }
 header li {
     display: inline-block;
@@ -56,21 +75,47 @@ header a {
     color: #fff;
     font-size: 12px;
 }
+header button {
+    line-height: normal;
+}
 
 /* -Main- */
 /* Hero */
 #hero {
     margin-top: 90px;
 }
+#hero img {
+    width: 50%;
+}
 
 /* Portfolio */
 #portfolio .square {
     width: 100%;
 }
+.portfolio-item {
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+.portfolio-item .square {
+    width: 100%;
+    display: block;
+}
 
 /* About */
 #about h2 {
     color: #fff;
+}
+#about button {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 13px;
+}
+#about button i {
+    font-size: 16px;
 }
 
 /* Contact me */
@@ -110,6 +155,9 @@ header a {
 header a:hover {
     color: #1abc9c;
 
+}
+#about button:hover {
+    transform: scale(1.1);
 }
 
 /* Media query */
