@@ -176,6 +176,10 @@ header button {
 form .btn {
     color: #fff;
 }
+.form-control:focus {
+    box-shadow: none;
+    border-color: #1abc9c;
+}
 
 
 /* Footer */
@@ -243,7 +247,6 @@ header a:hover {
         flex-basis: auto;
     }
     .navbar-nav {
-        align-items: stretch;
         flex-direction: row;
     }
     .navbar-expand-lg .navbar-nav .nav-link {
