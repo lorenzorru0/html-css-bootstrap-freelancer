@@ -36,6 +36,14 @@ section {
     font-size: 30px;
     vertical-align: middle;
 }
+#portfolio .divider,
+#contact-me .divider {
+    color: #000;
+}
+#portfolio .bar,
+#contact-me .bar {
+    background-color: #000;
+}
 
 /* Typo */
 h1, h3, p {
@@ -59,6 +67,7 @@ p {
 header {
     position: fixed;
     top: 0;
+    z-index: 1;
     width: 100%;
     height: 90px;
     line-height: 90px;
@@ -85,7 +94,7 @@ header button {
     margin-top: 90px;
 }
 #hero img {
-    width: 50%;
+    width: 250px;
 }
 
 /* Portfolio */
@@ -93,13 +102,25 @@ header button {
     width: 100%;
 }
 .portfolio-item {
+    position: relative;
     border-radius: 10px;
     overflow: hidden;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
-.portfolio-item .square {
+.portfolio-item img {
     width: 100%;
-    display: block;
+}
+.overlay {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(26, 188, 156,0.5);
+    color: #fff;
+    font-size: 80px;
 }
 
 /* About */
@@ -158,6 +179,9 @@ header a:hover {
 }
 #about button:hover {
     transform: scale(1.1);
+}
+.portfolio-item:hover > .overlay {
+    display: flex;
 }
 
 /* Media query */
