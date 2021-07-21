@@ -4,9 +4,9 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Bootstrap -->
+        <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <!-- /Bootstrap -->
+        <!-- /Bootstrap CSS -->
         <!-- Fontawesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- /Fontawesome -->
@@ -17,21 +17,28 @@
     <body>
         <!-- header part -->
         <header class="bg_primary">
-            <div class="container">
-                <div class="row">
-                    <div class="col-6 align-self-center">
-                        <h3>START BOOTSTRAP</h3>
-                    </div>
-                    <nav class="col-6 text-end">
-                        <button class="d-sm-none">button</button>
-                        <ul class="d-none d-sm-inline-block">
-                            <li><a href="#portfolio">PORTFOLIO</a></li>
-                            <li><a href="#about">ABOUT</a></li>
-                            <li><a href="#contact-me">CONTACT</a></li>
+            <nav class="navbar navbar-expand-lg navbar-light align-items-center">
+                <div class="container-fluid">
+                    <a class="navbar-brand">START BOOTSTRAP</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-lg-0">
+                            <li class="nav-item bg_primary">
+                                <a class="nav-link" href="#">PORTFOLIO</a>
+                            </li>
+                            <li class="nav-item bg_primary">
+                                <a class="nav-link" href="#">ABOUT</a>
+                            </li>
+                            <li class="nav-item bg_primary">
+                                <a class="nav-link" href="#">CONTACT</a>
+                            </li>
                         </ul>
-                    </nav>
+                    </div>
                 </div>
-            </div>
+            </nav>
         </header>
         <!-- /header part -->
 
@@ -145,7 +152,21 @@
                             </div>
                         </div>
                         <div class="col-10">
-                            <div class="square"></div>
+                            <form>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="exampleInputName1" aria-describedby="emailHelp" placeholder="Name">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="tel" class="form-control" id="exampleInputTel1" placeholder="Phone Number">
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Message"></textarea>
+                                </div>
+                                <button type="submit" class="btn bg_secondary">Send</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -182,12 +203,16 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12 text-center">
-                            <p>Copyright <i class="far fa-copyright"></i> Your Website 2021 </p>
+                            <small>Copyright <i class="far fa-copyright"></i> Your Website 2021 </small>
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
         <!-- /footer part -->
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <!-- /Bootstrap JS -->
     </body>
 </html>
