@@ -250,22 +250,6 @@ header a:hover {
         padding: 0px 25px;
     }
 }
-@media screen and (min-width: 575.98px) and (max-width: 992px) {
-    .navbar-expand-lg .navbar-toggler {
-        display: none;
-    }
-    .navbar-expand-lg .navbar-collapse {
-        display: flex!important;
-        flex-basis: auto;
-    }
-    .navbar-nav {
-        flex-direction: row;
-    }
-    .navbar-expand-lg .navbar-nav .nav-link {
-        padding-right: .5rem;
-        padding-left: .5rem;
-    }
-}
 @media screen and (min-width: 769px) {
     .bar {
         width: 170px;
