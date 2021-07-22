@@ -237,6 +237,12 @@ header a:hover {
         margin: 0px 2.5px 16px 2.5px;
         font-size: 18px;
     }
+    .bar {
+        width: 140px;
+    }
+    .divider i {
+        padding: 0px 25px;
+    }
 }
 @media screen and (min-width: 575.98px) and (max-width: 992px) {
     .navbar-expand-lg .navbar-toggler {
@@ -252,5 +258,13 @@ header a:hover {
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: .5rem;
         padding-left: .5rem;
+    }
+}
+@media screen and (min-width: 769px) {
+    .bar {
+        width: 170px;
+    }
+    .divider i {
+        padding: 0px 35px;
     }
 }
